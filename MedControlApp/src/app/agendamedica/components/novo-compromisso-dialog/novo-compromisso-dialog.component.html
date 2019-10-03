@@ -1,0 +1,59 @@
+<h2 mat-dialog-title>Novo agendamento</h2>
+<div class="examplo-container">
+  <form [formGroup]="principalForm" autocomplete="off" novalidate (ngSubmit)="novoCompromisso(principalForm.value)">
+<mat-dialog-content>
+
+          <mat-form-field>
+            <input matInput placeholder="Nome Completo" id="nome"  formControlName="nome"  [(ngModel)]="Compromisso?.Paciente.Nome" required>
+            <mat-hint align="end">Aceita no máximo 60 caracter.</mat-hint>
+            <mat-error *ngIf="hasError('nome', 'required')">Nome é obrigatório</mat-error>
+            <mat-error *ngIf="hasError('nome', 'maxlength')">Não é permitido mais de 60 caracteres.</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput [matDatepicker]="pickerdtNiver" formControlName="datanascimento" id="datanascimento" placeholder="Data de nascimento" [(ngModel)]="Compromisso?.Paciente.DataNascimento"
+            required readonly (click)="pickerdtNiver.open()">
+            <mat-datepicker-toggle matSuffix [for]="pickerdtNiver" ></mat-datepicker-toggle>
+            <mat-datepicker #pickerdtNiver></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker" formControlName="datainicio" id="datainicio" placeholder="Data início" [(ngModel)]="Compromisso?.Consulta.DataHoraIncial"
+            required readonly (click)="picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Hora início" type="time" formControlName="horainicio" id="horainicio" [(ngModel)]="Compromisso?.Consulta.HoraInicio" required>
+          </mat-form-field>
+
+          <mat-form-field>
+              <input matInput [matDatepicker]="picker1" placeholder="Data término" formControlName="datafim" id="datafim" [(ngModel)]="Compromisso?.Consulta.DataHoraFinal"
+              required readonly (click)="picker1.open()">
+              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Hora término" formControlName="horafim" id="horafim" [(ngModel)]="Compromisso?.Consulta.HoraFinal" required type="time">
+            </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+
+    <button mat-raised-button color="primary" [disabled]="!principalForm.valid"><mat-icon>save</mat-icon> Salvar</button>
+    <button mat-button color="primary" (click)="fechar()">
+        <mat-icon>cancel</mat-icon> Cancelar
+      </button>
+<!--
+  <button mat-button color="primary" (click)="salvar()">
+    <mat-icon>save</mat-icon> Salvar
+  </button>
+  <button mat-button color="primary" (click)="fechar()">
+    <mat-icon>cancel</mat-icon> Cancelar
+  </button> -->
+</mat-dialog-actions>
+
+</form>
+</div>

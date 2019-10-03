@@ -1,0 +1,14 @@
+C:\itix\MedControlAPI\MedControl\MedControl\bin\Debug\netcoreapp2.1\MedControl.deps.json
+C:\itix\MedControlAPI\MedControl\MedControl\bin\Debug\netcoreapp2.1\MedControl.runtimeconfig.json
+C:\itix\MedControlAPI\MedControl\MedControl\bin\Debug\netcoreapp2.1\MedControl.runtimeconfig.dev.json
+C:\itix\MedControlAPI\MedControl\MedControl\bin\Debug\netcoreapp2.1\MedControl.dll
+C:\itix\MedControlAPI\MedControl\MedControl\bin\Debug\netcoreapp2.1\MedControl.pdb
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.csprojAssemblyReference.cache
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.csproj.CoreCompileInputs.cache
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.RazorAssemblyInfo.cache
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.RazorAssemblyInfo.cs
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.AssemblyInfoInputs.cache
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.AssemblyInfo.cs
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.RazorTargetAssemblyInfo.cache
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.dll
+C:\itix\MedControlAPI\MedControl\MedControl\obj\Debug\netcoreapp2.1\MedControl.pdb
